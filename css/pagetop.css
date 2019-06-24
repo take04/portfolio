@@ -1,0 +1,9 @@
+#pagetop_wrap   { position: fixed; z-index: 20;  top: -50%; left: 50%; padding: 0 15px; transform: translateX(-50%);transition: .5s; }
+#pagetop    { margin: 20px auto 15px; position: relative;width: 48px; height: 48px; background: transparent; transform: rotate(-135deg); overflow: hidden; }
+#pagetop::before, #pagetop::after    { position: absolute; content: ""; display: block; width: 200%; height: 200%; border-radius: 100%; }
+#pagetop::before    {top: 85%; left: -47%; background: linear-gradient(-90deg,#334, transparent);}
+#pagetop::after     { left: 85%; top: -47%; background: linear-gradient(0deg,#334, transparent);}
+#pagetop>div    { position: absolute; top: 50%; left: 50%;  border-radius: 100%; width: 20%; height: 20%; background: #334;}
+#pagetop:active > div  { animation: bound 1s linear infinite; }
+@keyframes bound    { 25%{ top:40%; left: 40%;}50%{ top:50%; left: 50%;}75%{ top:60%; left: 60%;}100%{ top:50%; left: 50%;}}
+@keyframes heart    { 100%{ width: 30%; height: 30%;}}
