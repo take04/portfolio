@@ -4,7 +4,7 @@ body    { font-size: 1.6rem; line-height: 2;  color: #112; }
 header,#entrance    { font-family: 'Noto Sans KR', sans-serif; }
 header  { position: absolute; z-index: 101; top: 40vh; left: 50vw; transform: translate(-50%,-50%); font-weight: 600; font-size: 7vw; letter-spacing: 0.5rem; }
 #entrance   { position: relative; height: 100vh;  }
-nav a   { position: absolute; z-index: 90; display: block; width:33vw; height: 33vw; border-radius: 18vw; background-color: transparent; font-size: 2rem; line-height: 30vw; text-align: center; transform: translate( -50%, 50%); overflow: hidden;}
+nav a   { position: absolute; z-index: 90; display: block; width:33vw; height: 33vw; border-radius: 18vw; background-color: transparent; font-size: 2rem; line-height: 30vw; text-align: center; transform: translate( -50%, 50%);  /*overflow: hidden;*/}
 nav a>span  { position: absolute; z-index: 92; transform: translateX(-50%);}
 nav a>div   { position: absolute; top: 5%; left: 5%; width: 40vw; height: 40vw; border-radius: 30vw; background-color: #ef4;}
 #about_link { bottom: 27vh; left: 25%;  }
