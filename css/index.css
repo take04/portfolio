@@ -12,7 +12,7 @@ nav a>div   { position: absolute; top: 5%; left: 5%; width: 40vw; height: 40vw; 
 #contact_link   { bottom: 27vh; left: 75%; }
 
 .bubble>div { transform-origin: 52% 48%; -webkit-animation: anime1 3s ease-in-out infinite ; animation: anime1 3s ease-in-out infinite ;}
-@keyframes anime1   { 0%{ width: 40vw; height: 40vw; transform: rotate( 0deg);} 50%{ width: 43vh; height: 43vh;} 100%{ width: 40vw; height: 40vw; transform: rotate( 360deg); }}
+@keyframes anime1   { 0%{ width: 40vw; height: 40vw; -webkit-transform: rotate( 0deg); transform: rotate( 0deg);} 50%{ width: 43vh; height: 43vh;} 100%{ width: 40vw; height: 40vw; -webkit-transform: rotate( 360deg); transform: rotate( 360deg); }}
 @keyframes anime2   { 0%{ top: 0vh;} 100%{ top:-5vh;}}
 @keyframes anime3   { 0%{ width: 30vw; height: 30vw; transform: rotate( 0deg);} 50%{ width: 33vh; height: 33vh;} 100%{ width: 30vw; height: 30vw; transform: rotate( -360deg); }}
 
