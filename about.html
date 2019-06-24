@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PortfolioSite</title>
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/com.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pagetop.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+    <script src="js/arrowController.js"></script>
+</head>
+<body>
+    <span id="pagetop_wrap"><div id="pagetop"><div></div></div></span>
+    
+    <div id="about" class="main">
+        <div id="about_info">
+            <h2 class="name">Takeshi Takemura</h2>
+            <h3 class="name">Portfolio Site</h3>
+            <nav>
+                <a href="index.html"><span>Top</span></a>
+                <a href="#"><span>About</span></a>
+                <a href="about.html#works"><span>Works</span></a>
+                <a href="about.html#contact"><span>Contact</span></a>
+            </nav>
+            <div id="avatar"><div id="pagetop"></div></div>
+            <table id="profile">
+                <tr>
+                    <th>2018年</th>
+                    <td>基本情報処理技術者試験　合格</td>
+                </tr>
+                <tr>
+                    <th>2019年</th>
+                    <td>ヒューマンアカデミー Webデザイン実践科 修了</td>
+                </tr>
+            </table>
+
+            <p class="about_text">
+                Photoshop / Illustrator / html / CSS / Javascript / JQuery / PHP / C#<br>
+                Webデザイン、プログラミング勉強中。<br>
+                
+            </p>
+            <h2>この業界で大成したい</h2>
+            <h3 class="icon">遅れてきたルーキー</h3>
+            <p>みたいになれたらいいなと。</p>
+        </div>
+    </div>
+    <div id="works" class="main">
+        <h2 class="pagetitle">Works</h2>
+        <h3 class="subtitle"><span>Web</span></h3>
+        <div id="works_thumb_list" class="clearfix">
+            <a class="works_thumb_web" href="http://human.sakura.ne.jp/1903/10/1/index.html?t=1561184871" style="background-image: url('img/works/web_01.jpg')"></a>
+            <a class="works_thumb_web" href="http://human.sakura.ne.jp/1903/10/2/index2.html?t=1561184871" style="background-image: url('img/works/web_02.jpg')"></a>
+            <a class="works_thumb_web" href="#" style="background-image: url('img/underconstruction_01.jpg')"></a>
+            <a class="works_thumb_web" href="#" style="background-image: url('img/underconstruction_01.jpg')"></a>
+        </div>
+        <h3 class="subtitle"><span>Logo,etc.</span></h3>
+        <div id="works_thumb_list">
+            <a href="#" class="works_thumb_logo" style="background-image: url('img/underconstruction_01.jpg')"></a>
+            <a href="#" class="works_thumb_logo" style="background-image: url('img/works/banner_01.jpg')"></a>
+            <a href="#" class="works_thumb_logo" style="background-image: url('img/underconstruction_01.jpg')"></a>
+        </div>
+    </div>
+    <div id="contact" class="main">
+        <h2 class="pagetitle">Contact</h2>
+        <h3 class="subtitle"><span>E-mailAdress</span></h3>
+        <span>takemura871209@gmail.com</span>
+    </div>
+    <footer>
+        <span>&copy;takeshi takemura. All rights reserved.</span>
+    </footer>
+    <span id="hamburger">
+        <input id="checker" class="hidden" type='checkbox' />
+        <label id="open" for='checker'>
+                <span id="hamburger_cover"></span>
+                <span id="hamburger_entity">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </span>
+        </label>
+        <label id="close" class="hidden" for='checker'></label>
+        <div id="open_box" >
+            <div><span id="ob_name" class="ob_text">Takeshi Takemura</span>
+                <span id="ob_title" class="ob_text">Portfolio</span></div>
+            <div><a  id="ob_top" class="ob_text" href="index.html">Home</a></div>
+            <div><a  id="ob_works" class="ob_text" href="works.html">Works</a></div>
+            <div><a  id="ob_contact" class="ob_text" href="about.html#contact">Contact</a></div>
+            <!-- <a href=".html"></a>contact.html -->
+        </div>
+    </span>
+</body>
+</html>
