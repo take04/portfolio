@@ -12,11 +12,12 @@ h3 ~ h3 { color: red; }
 h3.icon::before {  content: "f"; position: absolute; top: 50%; left: 0px; transform: translateY(-55%); display: inline-block; width: 0; height: 0; overflow: hidden; border: 10px solid transparent; border-left-color: red; }
 
 h2.pagetitle { color: #123; }
-.subtitle   { position: relative; background-color: inherit; font-weight: normal; color: #789; overflow: hidden;}
+.subtitle   { position: relative; background-color: inherit; font-weight: normal; color: #567; overflow: hidden;}
 .subtitle ~ .subtitle   { margin-top: 30px; }
 .subtitle span  { padding-right: .8rem; }
 .subtitle::after    { position: absolute; content: " "; top: 50%; transform: translateY( -50%); display: inline-block; width: 100%; height: 2px; background: linear-gradient(90deg, #789,transparent 70%); }
 
+h4.subheader    { color: #789; }
 #works_thumb_list   { padding: 5px 0 0; }
 a[class^="works_thumb"]    { display: block; margin-bottom: 20px; background-position: center; background-size: contain; background-repeat: no-repeat; }
 .works_thumb_web    { width: 100%; padding-bottom: 80%; transition: .4s;}
@@ -44,7 +45,7 @@ a[class^="works_thumb"]:active    {background-size: 120%, 120% ;}
     #avatar>#pagetop::before    {top: 85%; left: -47%; background: linear-gradient(-90deg,#fe8, transparent);}
     #avatar>#pagetop::after     { left: 85%; top: -47%; background: linear-gradient(0deg,#fe8, transparent);}
 
-    #works_thumb_list   { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit,minmax(338px,1fr));}  
+    #works_thumb_list   { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit,minmax(360px,1fr));}  
     a.works_thumb_web   {   padding-bottom: 80%; margin-bottom: 0; }
     #works_thumb_list ~ #works_thumb_list  {grid-template-columns: repeat(auto-fit,minmax(270px,1fr)); }
     a.works_thumb_logo  { margin: 0; width: 100%; padding-bottom: 100%;}

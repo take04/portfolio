@@ -2,14 +2,14 @@ html    { font-size: 62.5%; }
 body    { font-size: 1.6rem; line-height: 2;  color: #112; }
 
 header,#entrance    { font-family: 'Noto Sans KR', sans-serif; }
-header  { position: absolute; z-index: 101; top: 40vh; left: 50vw; transform: translate(-50%,-50%); font-weight: 600; font-size: 7vw; letter-spacing: 0.5rem; }
+header  { position: absolute; z-index: 101; top: 35vh; left: 50vw; transform: translate(-50%,-50%); font-weight: 600;background: url("../img/bgimg/kemuri_01.png") center no-repeat; background-size: contain; font-size: 7vw; letter-spacing: 0.5rem; }
 #entrance   { position: relative; height: 100vh;  }
 nav a   { position: absolute; z-index: 90; display: block; width:33vw; height: 33vw; border-radius: 18vw; background-color: transparent; font-size: 2rem; line-height: 30vw; text-align: center; transform: translate( -50%, 50%);  overflow: hidden;}
 nav a>span  { position: absolute; z-index: 92; transform: translateX(-50%);}
 nav a>div   { position: absolute; top: 5%; left: 5%; width: 40vw; height: 40vw; border-radius: 30vw; background-color: #ef4;}
-#about_link { bottom: 27vh; left: 25%;  }
-#works_link { bottom: 12vh; left: 50%; }
-#contact_link   { bottom: 27vh; left: 75%; }
+#about_link { bottom: 40vh; left: 25%;  }
+#works_link { bottom: 25vh; left: 50%; }
+#contact_link   { bottom: 40vh; left: 75%; }
 
 .bubble>div { transform-origin: 52% 48%; -webkit-animation: anime1 3s ease-in-out infinite ; animation: anime1 3s ease-in-out infinite ;}
 @keyframes anime1   { 0%{ width: 40vw; height: 40vw; -webkit-transform: rotate( 0deg); transform: rotate( 0deg);} 50%{ width: 43vh; height: 43vh;} 100%{ width: 40vw; height: 40vw; -webkit-transform: rotate( 360deg); transform: rotate( 360deg); }}
