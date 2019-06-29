@@ -1,0 +1,69 @@
+.modal_wrap input{
+    display: none;
+}
+
+.modal_overlay{
+    display: flex;
+    position: fixed;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    padding: 50px; 
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: .7s;
+    visibility: hidden;
+}
+.modal_trigger{
+    position: fixed; 
+    top: 0; left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.modal_content{
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 20px 30px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.modal_image    { width: 80%; height: calc(200% - 22px); background-size: contain; background-repeat: no-repeat;}
+.close_btn{
+    cursor: pointer;
+    display: block;
+    height: 60px; line-height: 60px;
+    padding: 0 10px; 
+    background: rgba(5,5,7,.7);
+    text-align: center;
+}
+.close_btn:hover    { background: rgba(163, 163, 214, 0.9);}
+.close_btn>span { display: inline-block; font-size: 2rem; height: 100%;}
+.close_btn div  { position: relative; display: inline-block; width: 50px; height: 8px; margin-right: 12px; transform: rotate(45deg) translateY(-100%);  background: #99a; }
+.close_btn div>div    { position: absolute; left: 0; transform: rotate(-90deg);}
+.close_btn,.close_btn div   { border-radius: 5px; }
+
+.modal_wrap input:checked ~ .modal_overlay{
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.modal_wrap input:checked ~ .modal_overlay .modal_content{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.open_btn{
+    cursor: pointer;
+}

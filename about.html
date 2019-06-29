@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/com.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pagetop.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/close_menu.js"></script>
@@ -53,6 +54,32 @@
     <div id="works" class="main">
         <h2 class="pagetitle">Works</h2>
         <h3 class="subtitle"><span>Web</span></h3>
+        <div id="works_thumb_list2" class="clearfix">
+            <div class="works_item_web">
+                <h4 class="subheader">架空サイト（デザイン画像）</h4>
+                <div class="modal_wrap">
+                    <input type="checkbox" id="trigger">
+                    <div class="modal_overlay">
+                        <label for="trigger" class="modal_trigger"></label>
+                        <div class="modal_content">
+                            
+                            <img src="img/works/kanikouraku/kanikourakudesign.jpg" alt="">
+                            <label for="trigger" class="close_btn"><span><div><div></div></div>閉じる</span></label>
+
+                        </div>
+                        <!--<div class="modal_content">
+                            <label for="trigger" class="close_btn"><div></div><div></div></label>
+                            <h2>modalcontent</h2>
+                           <div class="modal_image" style="background-image: url('img/works/kanikouraku/kanikourakudesign.png')"></div> 
+                        </div>                                                                -->
+                    </div>
+                </div>
+                <div class="works_thumb_design" style="background-image: url('img/works/kanikouraku/craclub_01.svg')">
+                    <a href="img/works/kanikouraku/kanikourakudesign.jpg"></a>
+                    <label for="trigger" id="works_kanikouraku" class="open_btn"></label>
+                </div>
+            </div>
+        </div>
         <div id="works_thumb_list" class="clearfix">
             <div>
                 <h4 class="subheader">訓練校の授業にて制作</h4>

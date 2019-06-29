@@ -8,6 +8,9 @@ div:nth-child(2n)   { margin-top: 0; margin-left: 500px;}
 
 .n10 { animation: anime10 2s ease infinite alternate; }
 
+.n11    { position: fixed; top: 130%; height: 200vh; width: 80%;  }
+.n12    { }
+
 @keyframes anime1   { 0%{} 50%{ width: 300px; } 100%{ width: 100px;} }
 @keyframes anime2   { 0%{} 50%{ transform: rotate(135deg);} 100%{ transform: rotate(360deg);}  }
 @keyframes anime3   { 0%{} 50%{ } 100% { opacity: 0;} } 
